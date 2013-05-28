@@ -10,7 +10,7 @@ puush API documentation
  - Response (failure): `-1`
 
 ###Deletion
- - URL: `/api/hist`
+ - URL: `/api/del`
  - Request:
  - - k = apikey
  - - i = file identifier - on puush.me, is base10 of file hash
