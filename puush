@@ -63,7 +63,7 @@ done
 
 if [ -z "$PUUSH_API_KEY" ]
 then
-  echo "Set the variable PUUSH_API_KEY in $0 or with 'export PUUSH_API_KEY=\"apiKeyHere\"" >&2
+  echo "Set the variable PUUSH_API_KEY in $0 or with 'export PUUSH_API_KEY=\"apiKeyHere\"'" >&2
   exit 1
 fi
 
