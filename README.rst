@@ -1,12 +1,14 @@
 ===========
 puush-linux
 ===========
+------------
+Version: 1.0
+------------
 
 An enhanced fork of `blha303's original puush-linux`_ bash script.
 
 .. _blha303's original puush-linux: https://github.com/blha303/puush-linux/
 
------
 Usage
 -----
 
