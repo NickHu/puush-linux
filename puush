@@ -1,4 +1,5 @@
 #!/bin/bash
+# Version: git
 
 if [ -z "$PUUSH_API_KEY" ]
 then
