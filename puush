@@ -1,5 +1,5 @@
-#!/bin/bash
-# Version: 1.0
+#!/bin/sh
+# Version: 1.2
 
 if [ -z "$PUUSH_API_KEY" ]
 then
@@ -10,6 +10,7 @@ usage()
 {
   cat << EOF
 Usage: $0 [options] [file]
+If [file] is a hyphen, puush will read the filename from STDIN
 
   Options:
   -d	Delete file
@@ -176,6 +177,11 @@ case $OPERATION in
     ;;
   UP)
     FILE=${@: -1}
+    if [ "$FILE" = "-" ]
+    then
+      read FILE
+    fi
+    
     if ! [ -r "$FILE" ]
     then
       echo "Invalid file specified" >&2
