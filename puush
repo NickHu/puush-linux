@@ -10,6 +10,7 @@ usage()
 {
   cat << EOF
 Usage: $0 [options] [file]
+If [file] is a hyphen, puush will read the filename from STDIN
 
   Options:
   -d	Delete file
