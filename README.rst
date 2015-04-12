@@ -24,4 +24,6 @@ Usage
 
 The variable ``PUUSH_API_KEY`` must be set, either in the environment or at the top of ``puush``. This can be obtained from `puush account settings`_.
 
+If a hyphen is given for the file parameter, puush-linux will attempt to read the filename from STDIN.
+
 .. _puush account settings: http://puush.me/account/settings
