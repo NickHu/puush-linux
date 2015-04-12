@@ -176,6 +176,11 @@ case $OPERATION in
     ;;
   UP)
     FILE=${@: -1}
+    if [ "$FILE" = "-" ]
+    then
+      read FILE
+    fi
+    
     if ! [ -r "$FILE" ]
     then
       echo "Invalid file specified" >&2
